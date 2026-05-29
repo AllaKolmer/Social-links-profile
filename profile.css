@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #141414;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+.block {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.composition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    border-radius: 50%;
+    width:  80px;
+    margin-top: 30px;
+}
+h1 {
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.city {
+    color: #c5f82a;
+    font-weight: bold;
+}
+.description {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.click {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+button {
+    color: #ffffff;
+    background: #333333;
+    height: 45px;
+    width: 330px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+button:hover {
+    color: #1f1f1f;
+    background-color: #c5f82a;
+    cursor: pointer;
+    transition: 0.3s;
+}
