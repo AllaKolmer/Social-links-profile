@@ -11,30 +11,33 @@ body {
     align-items: center;
     font-family: "Inter", sans-serif;
 }
-.block {
+.container {
     background-color: #1f1f1f;
     border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
     height: 600px;
-    width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
 }
-.composition {
+.block {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 img {
     border-radius: 50%;
-    width:  80px;
-    margin-top: 30px;
+    width: 4rem;
+    margin-top: 1rem;
 }
 h1 {
     color: #ffffff;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     margin-bottom: 0;
 }
 .city {
@@ -43,18 +46,19 @@ h1 {
 }
 .description {
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 .click {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 0.7rem;
+    margin-bottom: 1rem;
 }
 button {
     color: #ffffff;
     background: #333333;
     height: 45px;
-    width: 330px;
+    width: 300px;
     font-weight: bold;
     border-radius: 10px;
     border: none;
@@ -65,6 +69,23 @@ button:hover {
     cursor: pointer;
     transition: 0.3s;
 }
-@media (max-width:1200px) {
-    
+@media (max-width:375px) {
+    .container {
+        max-width: 320px;
+        height: 480px;
+    }
+    img {
+        max-width: 3rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .description {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+    button {
+        max-height: 33px;
+    }
 }
